@@ -1,39 +1,41 @@
-<h3>Gallons</h3>
+<h4>Gallons</h4>
 <input type="number" [(ngModel)]="gallons" (change)="valuechange($event)">
 <hr>
-<h3>Nitrogen</h3>
+<h4>Nitrogen</h4>
 <input type="number" [(ngModel)]="ppm.nitrogen" (change)="valuechange($event)">
-<h3>Phosphorus</h3>
+<h4>Phosphorus</h4>
 <input type="number" [(ngModel)]="ppm.phosphorus" (change)="valuechange($event)">
-<h3>Potassium</h3>
+<h4>Potassium</h4>
 <input type="number" [(ngModel)]="ppm.potassium" (change)="valuechange($event)">
-<h3>Calcium</h3>
+<h4>Calcium</h4>
 <input type="number" [(ngModel)]="ppm.calcium" (change)="valuechange($event)">
 
-<h3>Magnesium</h3>
+<h4>Magnesium</h4>
 <input type="number" [(ngModel)]="ppm.magnesium" (change)="valuechange($event)">
 
-<h3>Iron</h3>
+<h4>Iron</h4>
 <input type="number" [(ngModel)]="ppm.iron" (change)="valuechange($event)">
 
 <hr>
-<p>
-total: {{ppm.nitrogen + ppm.phosphorus + ppm.potassium + ppm.calcium + ppm.magnesium + ppm.iron}}<br>
-Calcium Nitrate: {{(ppm.nitrogen/41)*gallons}}<br>
-MPK:  {{(ppm.potassium/75)*gallons}}<br>
-Epsom Salt: {{(ppm.magnesium/25)*gallons}}<br>
-Trace Elements: {{(ppm.iron/19.8)*gallons}}<br>
+<div>
+  <p>
+  total: {{ppm.nitrogen + ppm.phosphorus + ppm.potassium + ppm.calcium + ppm.magnesium + ppm.iron}}<br>
+  Calcium Nitrate: {{(ppm.nitrogen/41)*gallons}}<br>
+  MPK:  {{(ppm.potassium/75)*gallons}}<br>
+  Epsom Salt: {{(ppm.magnesium/25)*gallons}}<br>
+  Trace Elements: {{(ppm.iron/19.8)*gallons}}<br>
 
-</p>
+  </p>
+</div>
 <!--
-<h3>Phosphorus</h3>
+<h4>Phosphorus</h4>
 <input placeholder="0" #phosphorus [ngModel]="ppmTarget.phosphorus" type="number">
-<h3>Potassium</h3>
+<h4>Potassium</h4>
 <input placeholder="0" #potassium [ngModel]="ppmTarget.potassium" type="number">
-<h3>Calcium</h3>
+<h4>Calcium</h4>
 <input placeholder="0" #calcium [ngModel]="ppmTarget.calcium" type="number">
-<h3>Magnesium</h3>
+<h4>Magnesium</h4>
 <input placeholder="0" #magnesium [ngModel]="ppmTarget.magnesium" type="number">
-<h3>Iron</h3>
+<h4>Iron</h4>
 <input placeholder="0" #iron [ngModel]="ppmTarget.iron" type="number">
 -->

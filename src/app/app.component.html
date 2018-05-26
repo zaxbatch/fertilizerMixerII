@@ -4,8 +4,14 @@
     {{ title }}
   </h1>
   <nav>
-   <a >Target PPM</a>
-  <a >Fine Tune</a>
-  <app-ppm-target></app-ppm-target>
-</nav>
+    <a routerLink="/ppm-target" routerLinkActive="active">PPM Targets</a>
+    <a routerLink="/fine-tune" routerLinkActive="active">Fine Tune</a>
+  </nav>
+  <router-outlet></router-outlet>
 </div>
+
+
+<!--
+<app-ppm-target></app-ppm-target>
+<app-fine-tune></app-fine-tune>
+-->
